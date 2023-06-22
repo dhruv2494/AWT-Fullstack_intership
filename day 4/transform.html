@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tansform</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            transition: 2s;
+            position: relative;
+            left:400px;
+            background-color: rgb(0, 76, 255);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #translateDiv:hover{
+            translate: 200px 60px;
+        }
+        #rotateDiv:hover{
+            transform: rotate(270deg);
+        }
+        #rotateDiv3d:hover{
+            transform: rotate3d(1,1,1,140deg);
+        }
+        #skew:hover{
+            transform: skew(20deg,50deg);
+        }
+        #scale:hover{
+            transform: scale(1.4,1.2);
+        }
+        #opacity:hover{
+            background-color: burlywood;
+            opacity: 0.6;
+        }
+        #rgba:hover{
+            background-color: rgba(55, 155,255, 0.6);
+        }
+        #boxshadow:hover{
+            
+            box-shadow: 14px 14px 10px 2px rgb(9, 10, 12);
+        }
+        #textshadow:hover{
+            text-shadow:14px 14px  rgb(206, 206, 206);
+        }
+        #borderradius:hover{
+            border-radius: 54%;
+        }
+        #overflow:hover{
+            overflow: scroll;
+            height: 30px;
+            width: 30px;
+            
+        }
+        #b206:hover{
+            translate: 200px 60px;
+            overflow: scroll;
+            border-radius: 54%;
+            text-shadow:14px 14px  rgb(206, 206, 206);
+            box-shadow: 14px 14px 10px 2px rgb(9, 10, 12);
+            background-color: rgba(55, 155,255, 0.6);
+            transform: scale(1.4,1.2);
+            transform: skew(20deg,50deg);
+            transform: rotate3d(1,1,1,140deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="translateDiv">Translate</div>
+    <div id="rotateDiv">Rotate</div>
+    <div id="rotateDiv3d">Rotate3D</div>
+    <div id="skew">skew</div>
+    <div id="scale">scale</div>
+    <div id="opacity">opacity</div>
+    <div id="rgba">RGBA</div>
+    <div id="boxshadow">boxshadow</div>
+    <div id="b206" >cursor</div>
+    <div id="textshadow">texshadow</div>
+    <div id="borderradius">borderradius</div>
+    <div id="overflow" > overflow overflow <br> overflow overflow </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img|transform</title>
+    <style>
+        #imge,.imgcon{
+            height: 500px;
+            width: 500px;
+           
+        }
+        h3{
+            height: 500px;
+            width: 500px;
+            position: absolute;
+           top: 250px;
+           left: 250px;
+           font-size: 140%;
+           opacity: 0;
+        }
+        h3:hover{
+            height: 500px;
+            width: 500px;
+            opacity: 1;
+            z-index: 1;
+            
+        }
+        #
+        #imge:hover{
+            opacity: 0.6;
+            background-color: rgba(0,0, 0, 0.6);
+            transition: 3s;
+            transform: rotate(360deg);
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="imgcon">
+        <img src="172126-anime-yuji_itadori-ryomen_sukuna-jujutsu_kaisen-cartoon-3840x2160 (1).jpg" id="imge"> 
+        <h3>hello!</h3>
+    </div>
+</body>
+</html>
