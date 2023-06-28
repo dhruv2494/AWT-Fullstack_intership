@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #6e6d75a1;
+            border: 1px solid #250f0f;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h6 {
+            color: rgb(255, 0, 0);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #060aff;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            background-color: #f1ecf0;
+            border: none;
+            border-radius: 4px;
+            color: #ff0707;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0b8f12a1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h2><i class="fa fa-user"></i>&nbsp;Welcome to Sign up  page</h2>
+        <form class="was-validated" action="1.html" >
+            <div class="form-group">
+                <label for="name" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="kjhfyatf...." required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="User id" class="form-label">User id</label>
+                <input type="text" class="form-control" id="User id" name="emUser idail" placeholder="@hskfuee..."
+                    required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">email&nbsp;<i class="fa fa-envelope"></i> </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="dcbjds@gmail.com" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password &nbsp;<i class=" fa fa-eye-slash"
+                        aria-hidden="true"></i></label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="ex: Sj#455"
+                    required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="contact no" class="form-label">contact no &nbsp;<i class="fa fa-phone" &nbsp;></i></label>
+                <input type="text" class="form-control" id="contact no" name="contact no" maxlength="10" placeholder="+91 1234567890" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-group">
+                <label  for="gender"class="form-label"> select gender:</label>
+                <select  name="gender" id="gender" required>
+                    
+                    <option value="male">select one</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                </select>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback" value=""></div>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="mycheck">i am agree to the terms and policy.</label>
+                <input class="form-check-input" type="checkbox" id="mycheck" name="remember" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">
+                    <h6>please read terms and policy. </h6>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <hr>
+                <input type="submit" value="Sign In">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
