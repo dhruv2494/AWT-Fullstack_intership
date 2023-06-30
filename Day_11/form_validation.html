@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RegEx|Form Validation</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+
+<body>
+    <form name="contactForm" action="confirmation.html" method="get">
+        <h2>Application Form</h2>
+        <div class="row">
+            <label>Full Name <h4 id="nspace" hidden="true">pls enter space</h4></label>
+            <input id="name" onblur="name12()" onkeypress="name1()" type="text" name="name">
+            <!-- <div class="error" id="nameErr"></div>-->
+        </div>
+        <div class="row">
+            <label>Email Address <h4 id="emailtrue" hidden="true">pls enter valid email</h4></label>
+            <input type="text" id="email" onblur="email1()" name="email">
+            <!-- <div class="error" id="emailErr"></div>-->
+        </div>
+        <div class="row">
+            <label>Mobile Number</label>
+            <input type="text" id="num" onblur="num1()" onkeypress="num1()"  name="mobile" maxlength="10">
+            <!-- <div class="error" id="mobileErr"></div>-->
+        </div>
+        <div class="row">
+            <label>Country<h4 id="cunt" hidden="true">pls enter valid Country</h4></label>
+            <select id="cun" onclick="k()" value="null" name="country">
+                <option value="null">Select</option>
+                <option value="Australia" >Australia</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select>
+            <!-- <div class="error" id="countryErr"></div>-->
+        </div>
+        <div class="row">
+            <label>Gender</label>
+            <div class="form-inline">
+                <label><input type="radio" name="gender" checked value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <!-- <div class="error" id="genderErr"></div>-->
+        </div>
+        <div class="row">
+            <label>Hobbies <i>(Optional)</i></label>
+            <div class="form-inline">
+                <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies[]" value="movies"> Movies</label>
+                <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" onclick="l()" value="Submit">
+        </div>
+    </form>
+    <script src="validation.js"></script>
+</body>
+
+</html>
