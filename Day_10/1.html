@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dynamic DOM manipulation</h1>
+    <h2>The getElementsByTagName() method</h2>
+
+    <p>An Unordered list</p>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>javascript</li>
+    </ul>
+    <p>The innerHTML of the li element is </p>
+    <p id="demo"></p> 
+    
+    <script>
+        // const collection = document.getElementsByTagName("li");
+        // document.getElementById("demo").inneerHTML = collection[2].innerHTML;
+        document.getElementById("demo").innerHTML=document.getElementsByTagName("li")[1].innerHTML;
+
+    </script>
+
+</body>
+</html>
